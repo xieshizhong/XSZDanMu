@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "XSZDanMuView.h"
 #import "AppDelegate.h"
+#import "CalendarViewController.h"
 
 @interface ViewController (){
     XSZDanMuView *danMuview;
@@ -25,9 +26,15 @@
     startBtn.center=self.view.center;
     startBtn.backgroundColor=[UIColor redColor];
     startBtn.bounds=CGRectMake(0, 0, 100, 60);
-    [startBtn setTitle:@"开始吧" forState:UIControlStateNormal];
+    [startBtn setTitle:@"弹幕" forState:UIControlStateNormal];
     [startBtn addTarget:self action:@selector(startAction) forControlEvents:UIControlEventTouchDown];
     [self.view addSubview:startBtn];
+    
+    UIButton *canlendarBtn=[[UIButton alloc] initWithFrame:CGRectMake(startBtn.frame.origin.x, startBtn.frame.origin.y+70, 100, 60)];
+    canlendarBtn.backgroundColor=[UIColor redColor];
+    [canlendarBtn setTitle:@"日历" forState:UIControlStateNormal];
+    [canlendarBtn addTarget:self action:@selector(canlendarAction) forControlEvents:UIControlEventTouchDown];
+    [self.view addSubview:canlendarBtn];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -41,6 +48,11 @@
         //            danMuview.marginHeight=5;
     }
     [danMuview xsz_addDanMuInfos:[NSMutableArray arrayWithObjects:@"我是弹幕啊。。",@"我是弹幕啊。。",@"我是弹幕啊。。",@"我是弹幕啊。。",@"我是弹幕啊。。", @"我是弹幕啊。。",@"我是弹幕啊。。",@"我是弹幕啊。。",nil]];
+}
+
+- (void)canlendarAction{
+    CalendarViewController *canlendarCon=[[CalendarViewController alloc] init];
+    [self.navigationController pushViewController:canlendarCon animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

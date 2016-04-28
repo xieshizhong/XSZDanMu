@@ -16,6 +16,13 @@
 		08A5CEF61CD0F39300A26EF2 /* XSZDanmuDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A5CEF51CD0F39300A26EF2 /* XSZDanmuDemoTests.m */; };
 		08A5CF011CD0F39300A26EF2 /* XSZDanmuDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A5CF001CD0F39300A26EF2 /* XSZDanmuDemoUITests.m */; };
 		08A5CF111CD0F3C900A26EF2 /* XSZDanMuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A5CF101CD0F3C900A26EF2 /* XSZDanMuView.m */; };
+		08A8F3F91CD244A4008505DD /* CalendarViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A8F3ED1CD244A4008505DD /* CalendarViewCell.m */; };
+		08A8F3FA1CD244A4008505DD /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A8F3EF1CD244A4008505DD /* CalendarViewController.m */; };
+		08A8F3FB1CD244A4008505DD /* HeadReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A8F3F11CD244A4008505DD /* HeadReusableView.m */; };
+		08A8F3FC1CD244A4008505DD /* NSDate+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A8F3F31CD244A4008505DD /* NSDate+YYAdd.m */; };
+		08A8F3FD1CD244A4008505DD /* selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 08A8F3F41CD244A4008505DD /* selected.png */; };
+		08A8F3FE1CD244A4008505DD /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A8F3F61CD244A4008505DD /* Utils.m */; };
+		08A8F3FF1CD244A4008505DD /* XSZCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A8F3F81CD244A4008505DD /* XSZCalendar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +61,19 @@
 		08A5CF021CD0F39300A26EF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08A5CF0F1CD0F3C900A26EF2 /* XSZDanMuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSZDanMuView.h; sourceTree = "<group>"; };
 		08A5CF101CD0F3C900A26EF2 /* XSZDanMuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSZDanMuView.m; sourceTree = "<group>"; };
+		08A8F3EC1CD244A4008505DD /* CalendarViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarViewCell.h; sourceTree = "<group>"; };
+		08A8F3ED1CD244A4008505DD /* CalendarViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarViewCell.m; sourceTree = "<group>"; };
+		08A8F3EE1CD244A4008505DD /* CalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarViewController.h; sourceTree = "<group>"; };
+		08A8F3EF1CD244A4008505DD /* CalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarViewController.m; sourceTree = "<group>"; };
+		08A8F3F01CD244A4008505DD /* HeadReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadReusableView.h; sourceTree = "<group>"; };
+		08A8F3F11CD244A4008505DD /* HeadReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadReusableView.m; sourceTree = "<group>"; };
+		08A8F3F21CD244A4008505DD /* NSDate+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+YYAdd.h"; sourceTree = "<group>"; };
+		08A8F3F31CD244A4008505DD /* NSDate+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+YYAdd.m"; sourceTree = "<group>"; };
+		08A8F3F41CD244A4008505DD /* selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selected.png; sourceTree = "<group>"; };
+		08A8F3F51CD244A4008505DD /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		08A8F3F61CD244A4008505DD /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		08A8F3F71CD244A4008505DD /* XSZCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSZCalendar.h; sourceTree = "<group>"; };
+		08A8F3F81CD244A4008505DD /* XSZCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSZCalendar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +124,7 @@
 		08A5CEDA1CD0F39300A26EF2 /* XSZDanmuDemo */ = {
 			isa = PBXGroup;
 			children = (
+				08A8F3EB1CD244A4008505DD /* XSZCalendar */,
 				08A5CF0E1CD0F3C900A26EF2 /* DanMuview */,
 				08A5CEDE1CD0F39300A26EF2 /* AppDelegate.h */,
 				08A5CEDF1CD0F39300A26EF2 /* AppDelegate.m */,
@@ -151,6 +172,26 @@
 				08A5CF101CD0F3C900A26EF2 /* XSZDanMuView.m */,
 			);
 			path = DanMuview;
+			sourceTree = "<group>";
+		};
+		08A8F3EB1CD244A4008505DD /* XSZCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				08A8F3EC1CD244A4008505DD /* CalendarViewCell.h */,
+				08A8F3ED1CD244A4008505DD /* CalendarViewCell.m */,
+				08A8F3EE1CD244A4008505DD /* CalendarViewController.h */,
+				08A8F3EF1CD244A4008505DD /* CalendarViewController.m */,
+				08A8F3F01CD244A4008505DD /* HeadReusableView.h */,
+				08A8F3F11CD244A4008505DD /* HeadReusableView.m */,
+				08A8F3F21CD244A4008505DD /* NSDate+YYAdd.h */,
+				08A8F3F31CD244A4008505DD /* NSDate+YYAdd.m */,
+				08A8F3F41CD244A4008505DD /* selected.png */,
+				08A8F3F51CD244A4008505DD /* Utils.h */,
+				08A8F3F61CD244A4008505DD /* Utils.m */,
+				08A8F3F71CD244A4008505DD /* XSZCalendar.h */,
+				08A8F3F81CD244A4008505DD /* XSZCalendar.m */,
+			);
+			path = XSZCalendar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +297,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08A8F3FD1CD244A4008505DD /* selected.png in Resources */,
 				08A5CEEB1CD0F39300A26EF2 /* LaunchScreen.storyboard in Resources */,
 				08A5CEE81CD0F39300A26EF2 /* Assets.xcassets in Resources */,
 				08A5CEE61CD0F39300A26EF2 /* Main.storyboard in Resources */,
@@ -283,9 +325,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08A8F3FE1CD244A4008505DD /* Utils.m in Sources */,
+				08A8F3F91CD244A4008505DD /* CalendarViewCell.m in Sources */,
+				08A8F3FB1CD244A4008505DD /* HeadReusableView.m in Sources */,
+				08A8F3FF1CD244A4008505DD /* XSZCalendar.m in Sources */,
 				08A5CEE31CD0F39300A26EF2 /* ViewController.m in Sources */,
 				08A5CEE01CD0F39300A26EF2 /* AppDelegate.m in Sources */,
 				08A5CF111CD0F3C900A26EF2 /* XSZDanMuView.m in Sources */,
+				08A8F3FA1CD244A4008505DD /* CalendarViewController.m in Sources */,
+				08A8F3FC1CD244A4008505DD /* NSDate+YYAdd.m in Sources */,
 				08A5CEDD1CD0F39300A26EF2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -510,6 +558,7 @@
 				08A5CF071CD0F39300A26EF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		08A5CF081CD0F39300A26EF2 /* Build configuration list for PBXNativeTarget "XSZDanmuDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +567,7 @@
 				08A5CF0A1CD0F39300A26EF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		08A5CF0B1CD0F39300A26EF2 /* Build configuration list for PBXNativeTarget "XSZDanmuDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +576,7 @@
 				08A5CF0D1CD0F39300A26EF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
