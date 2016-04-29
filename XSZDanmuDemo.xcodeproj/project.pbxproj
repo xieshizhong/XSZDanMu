@@ -20,7 +20,6 @@
 		08A8F3FA1CD244A4008505DD /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A8F3EF1CD244A4008505DD /* CalendarViewController.m */; };
 		08A8F3FB1CD244A4008505DD /* HeadReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A8F3F11CD244A4008505DD /* HeadReusableView.m */; };
 		08A8F3FC1CD244A4008505DD /* NSDate+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A8F3F31CD244A4008505DD /* NSDate+YYAdd.m */; };
-		08A8F3FD1CD244A4008505DD /* selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 08A8F3F41CD244A4008505DD /* selected.png */; };
 		08A8F3FE1CD244A4008505DD /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A8F3F61CD244A4008505DD /* Utils.m */; };
 		08A8F3FF1CD244A4008505DD /* XSZCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A8F3F81CD244A4008505DD /* XSZCalendar.m */; };
 /* End PBXBuildFile section */
@@ -69,7 +68,6 @@
 		08A8F3F11CD244A4008505DD /* HeadReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadReusableView.m; sourceTree = "<group>"; };
 		08A8F3F21CD244A4008505DD /* NSDate+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+YYAdd.h"; sourceTree = "<group>"; };
 		08A8F3F31CD244A4008505DD /* NSDate+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+YYAdd.m"; sourceTree = "<group>"; };
-		08A8F3F41CD244A4008505DD /* selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selected.png; sourceTree = "<group>"; };
 		08A8F3F51CD244A4008505DD /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		08A8F3F61CD244A4008505DD /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 		08A8F3F71CD244A4008505DD /* XSZCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSZCalendar.h; sourceTree = "<group>"; };
@@ -185,7 +183,6 @@
 				08A8F3F11CD244A4008505DD /* HeadReusableView.m */,
 				08A8F3F21CD244A4008505DD /* NSDate+YYAdd.h */,
 				08A8F3F31CD244A4008505DD /* NSDate+YYAdd.m */,
-				08A8F3F41CD244A4008505DD /* selected.png */,
 				08A8F3F51CD244A4008505DD /* Utils.h */,
 				08A8F3F61CD244A4008505DD /* Utils.m */,
 				08A8F3F71CD244A4008505DD /* XSZCalendar.h */,
@@ -297,7 +294,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08A8F3FD1CD244A4008505DD /* selected.png in Resources */,
 				08A5CEEB1CD0F39300A26EF2 /* LaunchScreen.storyboard in Resources */,
 				08A5CEE81CD0F39300A26EF2 /* Assets.xcassets in Resources */,
 				08A5CEE61CD0F39300A26EF2 /* Main.storyboard in Resources */,

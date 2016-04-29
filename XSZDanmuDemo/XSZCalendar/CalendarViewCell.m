@@ -23,15 +23,17 @@
 - (void)initView{
     CGFloat width=[UIScreen mainScreen].bounds.size.width/7;
     
-    _selectedView=[[UIImageView alloc] initWithFrame:CGRectMake(0, 0,width*2/3, width*2/3)];
-    _selectedView.image=[UIImage imageNamed:@"selected"];
-    [self addSubview:_selectedView];
-    
-    _dateLab=[[UILabel alloc] initWithFrame:CGRectMake(0, 0,width, width)];
+    _dateLab=[[UILabel alloc] initWithFrame:CGRectMake(0, 10,width, 16)];
     _dateLab.font=[UIFont systemFontOfSize:15];
     _dateLab.textColor=[UIColor blackColor];
     _dateLab.textAlignment=NSTextAlignmentCenter;
     [self addSubview:_dateLab];
+    
+    _descriptionLab=[[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(_dateLab.frame)+5,width, 11)];
+    _descriptionLab.font=[UIFont systemFontOfSize:10];
+    _descriptionLab.textColor=[UIColor redColor];
+    _descriptionLab.textAlignment=NSTextAlignmentCenter;
+    [self addSubview:_descriptionLab];
     _selectedView.center=_dateLab.center;
 }
 

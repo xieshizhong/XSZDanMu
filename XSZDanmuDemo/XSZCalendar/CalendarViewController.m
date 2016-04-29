@@ -11,10 +11,10 @@
 #import "HeadReusableView.h"
 #import "NSDate+YYAdd.h"
 #import "Utils.h"
-//获取设备的物理高度
+
 #define ScreenHeight [UIScreen mainScreen].bounds.size.height
-//获取设备的物理宽度
 #define ScreenWidth [UIScreen mainScreen].bounds.size.width
+#define IOS9_OR_LATER   ([[[UIDevice currentDevice] systemVersion] compare:@"9.1"] != NSOrderedAscending)
 static NSString *const cellId = @"cellId";
 static NSString *const headerId = @"headerId";
 static NSString *const footerId = @"footerId";
@@ -34,6 +34,11 @@ static NSString *const footerId = @"footerId";
     _dateInfos=[NSMutableArray array];
     [self createDateinfos];
     [self.view addSubview:self.calendarCollectionview];
+}
+
+- (CGFloat)getRandomfloat:(int)from to:(int)to{
+    int frandom =  (int)(from + (arc4random() % (to-from + 1)));
+    return frandom;
 }
 
 - (void)createDateinfos{
@@ -64,6 +69,7 @@ static NSString *const footerId = @"footerId";
             NSMutableDictionary *infoPararms=[[NSMutableDictionary alloc] init];
             [infoPararms setObject:[NSString stringWithFormat:@"%d",j] forKey:@"day"];
             [infoPararms setObject:@"0" forKey:@"Selected"];
+            [infoPararms setObject:[NSString stringWithFormat:@"¥ %.f",[self getRandomfloat:100 to:10000]] forKey:@"description"];
             [dayArray addObject:infoPararms];
         }
         if (oneMonthWhicWeek>1) {
@@ -84,7 +90,7 @@ static NSString *const footerId = @"footerId";
         flowLayout.itemSize=CGSizeMake((ScreenWidth)/7, (ScreenWidth)/7);
         flowLayout.headerReferenceSize=CGSizeMake(ScreenWidth, 60);
         flowLayout.footerReferenceSize=CGSizeMake(ScreenWidth, 0.01);
-        flowLayout.sectionHeadersPinToVisibleBounds=YES;
+        if(IOS9_OR_LATER) flowLayout.sectionHeadersPinToVisibleBounds=YES;
         _calendarCollectionview=[[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight) collectionViewLayout:flowLayout];
         [_calendarCollectionview registerClass:[CalendarViewCell class] forCellWithReuseIdentifier:cellId];
         [_calendarCollectionview registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:headerId];
@@ -120,14 +126,16 @@ static NSString *const footerId = @"footerId";
     if ([datearray[indexPath.row] isKindOfClass:[NSMutableDictionary class]]) {
         NSMutableDictionary *dayPararms=datearray[indexPath.row];
         calendarViewCell.dateLab.text=dayPararms[@"day"];
+        calendarViewCell.descriptionLab.text=dayPararms[@"description"];
         if ([dayPararms[@"Selected"] integerValue]==0) {
-            calendarViewCell.selectedView.hidden=YES;
+            calendarViewCell.backgroundColor=[UIColor whiteColor];
         }else{
-            calendarViewCell.selectedView.hidden=NO;
+            calendarViewCell.backgroundColor=[UIColor blueColor];
         }
     }else{
         calendarViewCell.dateLab.text=datearray[indexPath.row];
-        calendarViewCell.selectedView.hidden=YES;
+        calendarViewCell.descriptionLab.text=@"";
+        calendarViewCell.backgroundColor=[UIColor whiteColor];
     }
     return calendarViewCell;
 }

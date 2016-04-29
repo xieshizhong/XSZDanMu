@@ -11,5 +11,5 @@
 @interface CalendarViewCell : UICollectionViewCell
 
 @property(nonatomic,copy) UILabel *dateLab;
-@property(nonatomic,copy) UIImageView *selectedView;
+@property(nonatomic,copy) UILabel *descriptionLab;
 @end
