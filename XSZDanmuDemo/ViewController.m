@@ -10,6 +10,7 @@
 #import "XSZDanMuView.h"
 #import "AppDelegate.h"
 #import "CalendarViewController.h"
+#import "RuoshuiAnimationViewController.h"
 
 @interface ViewController (){
     XSZDanMuView *danMuview;
@@ -35,6 +36,12 @@
     [canlendarBtn setTitle:@"日历" forState:UIControlStateNormal];
     [canlendarBtn addTarget:self action:@selector(canlendarAction) forControlEvents:UIControlEventTouchDown];
     [self.view addSubview:canlendarBtn];
+    
+    UIButton *animationBtn=[[UIButton alloc] initWithFrame:CGRectMake(startBtn.frame.origin.x, canlendarBtn.frame.origin.y+70, 100, 60)];
+    animationBtn.backgroundColor=[UIColor redColor];
+    [animationBtn setTitle:@"交互" forState:UIControlStateNormal];
+    [animationBtn addTarget:self action:@selector(animationBtnAction) forControlEvents:UIControlEventTouchDown];
+    [self.view addSubview:animationBtn];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -53,6 +60,11 @@
 - (void)canlendarAction{
     CalendarViewController *canlendarCon=[[CalendarViewController alloc] init];
     [self.navigationController pushViewController:canlendarCon animated:YES];
+}
+
+- (void)animationBtnAction{
+    RuoshuiAnimationViewController *animationCon=[[RuoshuiAnimationViewController alloc] init];
+    [self.navigationController pushViewController:animationCon animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

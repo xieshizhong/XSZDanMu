@@ -34,7 +34,6 @@
     _descriptionLab.textColor=[UIColor redColor];
     _descriptionLab.textAlignment=NSTextAlignmentCenter;
     [self addSubview:_descriptionLab];
-    _selectedView.center=_dateLab.center;
 }
 
 @end

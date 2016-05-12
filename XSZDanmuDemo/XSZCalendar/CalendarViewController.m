@@ -12,9 +12,6 @@
 #import "NSDate+YYAdd.h"
 #import "Utils.h"
 
-#define ScreenHeight [UIScreen mainScreen].bounds.size.height
-#define ScreenWidth [UIScreen mainScreen].bounds.size.width
-#define IOS9_OR_LATER   ([[[UIDevice currentDevice] systemVersion] compare:@"9.1"] != NSOrderedAscending)
 static NSString *const cellId = @"cellId";
 static NSString *const headerId = @"headerId";
 static NSString *const footerId = @"footerId";

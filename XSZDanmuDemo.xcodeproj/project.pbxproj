@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0815F4061CE31BF900DF0AD9 /* RuoshuiAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0815F4051CE31BF900DF0AD9 /* RuoshuiAnimationViewController.m */; };
 		08A5CEDD1CD0F39300A26EF2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A5CEDC1CD0F39300A26EF2 /* main.m */; };
 		08A5CEE01CD0F39300A26EF2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A5CEDF1CD0F39300A26EF2 /* AppDelegate.m */; };
 		08A5CEE31CD0F39300A26EF2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A5CEE21CD0F39300A26EF2 /* ViewController.m */; };
@@ -42,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0815F4041CE31BF900DF0AD9 /* RuoshuiAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuoshuiAnimationViewController.h; sourceTree = "<group>"; };
+		0815F4051CE31BF900DF0AD9 /* RuoshuiAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuoshuiAnimationViewController.m; sourceTree = "<group>"; };
+		0815F4091CE3337000DF0AD9 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		08A5CED81CD0F39300A26EF2 /* XSZDanmuDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XSZDanmuDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08A5CEDC1CD0F39300A26EF2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		08A5CEDE1CD0F39300A26EF2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -122,6 +126,9 @@
 		08A5CEDA1CD0F39300A26EF2 /* XSZDanmuDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0815F4091CE3337000DF0AD9 /* PrefixHeader.pch */,
+				0815F4041CE31BF900DF0AD9 /* RuoshuiAnimationViewController.h */,
+				0815F4051CE31BF900DF0AD9 /* RuoshuiAnimationViewController.m */,
 				08A8F3EB1CD244A4008505DD /* XSZCalendar */,
 				08A5CF0E1CD0F3C900A26EF2 /* DanMuview */,
 				08A5CEDE1CD0F39300A26EF2 /* AppDelegate.h */,
@@ -325,6 +332,7 @@
 				08A8F3F91CD244A4008505DD /* CalendarViewCell.m in Sources */,
 				08A8F3FB1CD244A4008505DD /* HeadReusableView.m in Sources */,
 				08A8F3FF1CD244A4008505DD /* XSZCalendar.m in Sources */,
+				0815F4061CE31BF900DF0AD9 /* RuoshuiAnimationViewController.m in Sources */,
 				08A5CEE31CD0F39300A26EF2 /* ViewController.m in Sources */,
 				08A5CEE01CD0F39300A26EF2 /* AppDelegate.m in Sources */,
 				08A5CF111CD0F3C900A26EF2 /* XSZDanMuView.m in Sources */,
@@ -471,6 +479,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
 				INFOPLIST_FILE = XSZDanmuDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.XSZDanmuDemo;
@@ -482,6 +491,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
 				INFOPLIST_FILE = XSZDanmuDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.XSZDanmuDemo;
