@@ -11,6 +11,7 @@
 #import "AppDelegate.h"
 #import "CalendarViewController.h"
 #import "RuoshuiAnimationViewController.h"
+#import "WaveView.h"
 
 @interface ViewController (){
     XSZDanMuView *danMuview;
@@ -42,6 +43,12 @@
     [animationBtn setTitle:@"交互" forState:UIControlStateNormal];
     [animationBtn addTarget:self action:@selector(animationBtnAction) forControlEvents:UIControlEventTouchDown];
     [self.view addSubview:animationBtn];
+    
+    UIButton *waveBtn=[[UIButton alloc] initWithFrame:CGRectMake(startBtn.frame.origin.x, animationBtn.frame.origin.y+70, 100, 60)];
+    waveBtn.backgroundColor=[UIColor redColor];
+    [waveBtn setTitle:@"波纹" forState:UIControlStateNormal];
+    [waveBtn addTarget:self action:@selector(waveBtnAction) forControlEvents:UIControlEventTouchDown];
+    [self.view addSubview:waveBtn];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -65,6 +72,11 @@
 - (void)animationBtnAction{
     RuoshuiAnimationViewController *animationCon=[[RuoshuiAnimationViewController alloc] init];
     [self.navigationController pushViewController:animationCon animated:YES];
+}
+
+- (void)waveBtnAction{
+    WaveView *wave=[[WaveView alloc] initWithFrame:CGRectMake(100, 200, 40, 40)];
+    [self.view addSubview:wave];
 }
 
 - (void)didReceiveMemoryWarning {

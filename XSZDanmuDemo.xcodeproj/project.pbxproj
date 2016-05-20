@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0815F4061CE31BF900DF0AD9 /* RuoshuiAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0815F4051CE31BF900DF0AD9 /* RuoshuiAnimationViewController.m */; };
+		0841C08A1CEEC5F700EB416C /* WaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0841C0891CEEC5F700EB416C /* WaveView.m */; };
 		08A5CEDD1CD0F39300A26EF2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A5CEDC1CD0F39300A26EF2 /* main.m */; };
 		08A5CEE01CD0F39300A26EF2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A5CEDF1CD0F39300A26EF2 /* AppDelegate.m */; };
 		08A5CEE31CD0F39300A26EF2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A5CEE21CD0F39300A26EF2 /* ViewController.m */; };
@@ -46,6 +47,8 @@
 		0815F4041CE31BF900DF0AD9 /* RuoshuiAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuoshuiAnimationViewController.h; sourceTree = "<group>"; };
 		0815F4051CE31BF900DF0AD9 /* RuoshuiAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuoshuiAnimationViewController.m; sourceTree = "<group>"; };
 		0815F4091CE3337000DF0AD9 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		0841C0881CEEC5F700EB416C /* WaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveView.h; sourceTree = "<group>"; };
+		0841C0891CEEC5F700EB416C /* WaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaveView.m; sourceTree = "<group>"; };
 		08A5CED81CD0F39300A26EF2 /* XSZDanmuDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XSZDanmuDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08A5CEDC1CD0F39300A26EF2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		08A5CEDE1CD0F39300A26EF2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -103,6 +106,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		087E24EF1CEEB56B006F85A3 /* WaterDialogView */ = {
+			isa = PBXGroup;
+			children = (
+				0841C0881CEEC5F700EB416C /* WaveView.h */,
+				0841C0891CEEC5F700EB416C /* WaveView.m */,
+			);
+			path = WaterDialogView;
+			sourceTree = "<group>";
+		};
 		08A5CECF1CD0F39300A26EF2 = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +141,7 @@
 				0815F4091CE3337000DF0AD9 /* PrefixHeader.pch */,
 				0815F4041CE31BF900DF0AD9 /* RuoshuiAnimationViewController.h */,
 				0815F4051CE31BF900DF0AD9 /* RuoshuiAnimationViewController.m */,
+				087E24EF1CEEB56B006F85A3 /* WaterDialogView */,
 				08A8F3EB1CD244A4008505DD /* XSZCalendar */,
 				08A5CF0E1CD0F3C900A26EF2 /* DanMuview */,
 				08A5CEDE1CD0F39300A26EF2 /* AppDelegate.h */,
@@ -338,6 +351,7 @@
 				08A5CF111CD0F3C900A26EF2 /* XSZDanMuView.m in Sources */,
 				08A8F3FA1CD244A4008505DD /* CalendarViewController.m in Sources */,
 				08A8F3FC1CD244A4008505DD /* NSDate+YYAdd.m in Sources */,
+				0841C08A1CEEC5F700EB416C /* WaveView.m in Sources */,
 				08A5CEDD1CD0F39300A26EF2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +425,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -455,6 +470,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -479,6 +495,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
 				INFOPLIST_FILE = XSZDanmuDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -491,6 +508,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
 				INFOPLIST_FILE = XSZDanmuDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -503,6 +521,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = XSZDanmuDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.XSZDanmuDemoTests;
@@ -515,6 +534,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = XSZDanmuDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.XSZDanmuDemoTests;
