@@ -28,6 +28,10 @@
 
 - (void)xsz_setState:(UIGestureRecognizerState) state{
     [self xsz_setState:state];
+    NSString *className=objc_getAssociatedObject(self, @"className");
+    if (!className) return;
+    NSString *methodName=objc_getAssociatedObject(self, @"methodName");
+    if (!methodName) return;
     if (state==UIGestureRecognizerStateEnded) {
         NSDictionary *countConfig=[[NSUserDefaults standardUserDefaults] objectForKey:@"hcb_countConfig"];
         if (!countConfig) return;
@@ -35,8 +39,6 @@
         if (!classList) return;
         NSArray *methodList=countConfig[@"methodList"];
         if (!methodList) return;
-        NSString *className=objc_getAssociatedObject(self, @"className");
-        NSString *methodName=objc_getAssociatedObject(self, @"methodName");
         if ([classList containsObject:className]&&[methodList containsObject:methodName]) {
             [self uploadActionInfo:className methodName:methodName description:@"暂无描述信息"];
         }
