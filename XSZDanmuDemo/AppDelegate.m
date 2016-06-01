@@ -18,11 +18,19 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self configureCountInfo];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     ViewController *viewCon=[[ViewController alloc] init];
     self.window.rootViewController=[[UINavigationController alloc] initWithRootViewController:viewCon];
     return YES;
+}
+
+- (void)configureCountInfo{
+    NSArray *classList=@[@"ViewController"];
+    NSArray *methodList=@[@"startAction",@"canlendarAction",@"waveBtnAction"];
+    NSDictionary *hcb_configInfo=@{@"classList":classList,@"methodList":methodList};
+    [[NSUserDefaults standardUserDefaults] setObject:hcb_configInfo forKey:@"hcb_countConfig"];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0815F4061CE31BF900DF0AD9 /* RuoshuiAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0815F4051CE31BF900DF0AD9 /* RuoshuiAnimationViewController.m */; };
 		0841C08A1CEEC5F700EB416C /* WaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0841C0891CEEC5F700EB416C /* WaveView.m */; };
 		08A5CEDD1CD0F39300A26EF2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A5CEDC1CD0F39300A26EF2 /* main.m */; };
 		08A5CEE01CD0F39300A26EF2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A5CEDF1CD0F39300A26EF2 /* AppDelegate.m */; };
@@ -24,6 +23,11 @@
 		08A8F3FC1CD244A4008505DD /* NSDate+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A8F3F31CD244A4008505DD /* NSDate+YYAdd.m */; };
 		08A8F3FE1CD244A4008505DD /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A8F3F61CD244A4008505DD /* Utils.m */; };
 		08A8F3FF1CD244A4008505DD /* XSZCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A8F3F81CD244A4008505DD /* XSZCalendar.m */; };
+		952B0F811CFEE30600CED2DE /* NSObject+XDAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 952B0F7C1CFEE30600CED2DE /* NSObject+XDAdd.m */; };
+		952B0F821CFEE30600CED2DE /* UIControl+XSZAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 952B0F7E1CFEE30600CED2DE /* UIControl+XSZAdd.m */; };
+		952B0F831CFEE30600CED2DE /* UIViewController+XSZAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 952B0F801CFEE30600CED2DE /* UIViewController+XSZAdd.m */; };
+		952B0F871CFEE33B00CED2DE /* RuoshuiAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 952B0F861CFEE33B00CED2DE /* RuoshuiAnimationViewController.m */; };
+		95EF3F0C1CFF13FF00BB216B /* UITapGestureRecognizer+XSZAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 95EF3F0B1CFF13FF00BB216B /* UITapGestureRecognizer+XSZAdd.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,8 +48,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0815F4041CE31BF900DF0AD9 /* RuoshuiAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuoshuiAnimationViewController.h; sourceTree = "<group>"; };
-		0815F4051CE31BF900DF0AD9 /* RuoshuiAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuoshuiAnimationViewController.m; sourceTree = "<group>"; };
 		0815F4091CE3337000DF0AD9 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		0841C0881CEEC5F700EB416C /* WaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveView.h; sourceTree = "<group>"; };
 		0841C0891CEEC5F700EB416C /* WaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaveView.m; sourceTree = "<group>"; };
@@ -79,6 +81,16 @@
 		08A8F3F61CD244A4008505DD /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 		08A8F3F71CD244A4008505DD /* XSZCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSZCalendar.h; sourceTree = "<group>"; };
 		08A8F3F81CD244A4008505DD /* XSZCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSZCalendar.m; sourceTree = "<group>"; };
+		952B0F7B1CFEE30600CED2DE /* NSObject+XDAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+XDAdd.h"; sourceTree = "<group>"; };
+		952B0F7C1CFEE30600CED2DE /* NSObject+XDAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+XDAdd.m"; sourceTree = "<group>"; };
+		952B0F7D1CFEE30600CED2DE /* UIControl+XSZAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+XSZAdd.h"; sourceTree = "<group>"; };
+		952B0F7E1CFEE30600CED2DE /* UIControl+XSZAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+XSZAdd.m"; sourceTree = "<group>"; };
+		952B0F7F1CFEE30600CED2DE /* UIViewController+XSZAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XSZAdd.h"; sourceTree = "<group>"; };
+		952B0F801CFEE30600CED2DE /* UIViewController+XSZAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XSZAdd.m"; sourceTree = "<group>"; };
+		952B0F851CFEE33B00CED2DE /* RuoshuiAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuoshuiAnimationViewController.h; sourceTree = "<group>"; };
+		952B0F861CFEE33B00CED2DE /* RuoshuiAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuoshuiAnimationViewController.m; sourceTree = "<group>"; };
+		95EF3F0A1CFF13FF00BB216B /* UITapGestureRecognizer+XSZAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITapGestureRecognizer+XSZAdd.h"; sourceTree = "<group>"; };
+		95EF3F0B1CFF13FF00BB216B /* UITapGestureRecognizer+XSZAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITapGestureRecognizer+XSZAdd.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,9 +150,9 @@
 		08A5CEDA1CD0F39300A26EF2 /* XSZDanmuDemo */ = {
 			isa = PBXGroup;
 			children = (
+				952B0F841CFEE33B00CED2DE /* RuoShui */,
+				952B0F7A1CFEE30600CED2DE /* HcbCount */,
 				0815F4091CE3337000DF0AD9 /* PrefixHeader.pch */,
-				0815F4041CE31BF900DF0AD9 /* RuoshuiAnimationViewController.h */,
-				0815F4051CE31BF900DF0AD9 /* RuoshuiAnimationViewController.m */,
 				087E24EF1CEEB56B006F85A3 /* WaterDialogView */,
 				08A8F3EB1CD244A4008505DD /* XSZCalendar */,
 				08A5CF0E1CD0F3C900A26EF2 /* DanMuview */,
@@ -209,6 +221,30 @@
 				08A8F3F81CD244A4008505DD /* XSZCalendar.m */,
 			);
 			path = XSZCalendar;
+			sourceTree = "<group>";
+		};
+		952B0F7A1CFEE30600CED2DE /* HcbCount */ = {
+			isa = PBXGroup;
+			children = (
+				952B0F7B1CFEE30600CED2DE /* NSObject+XDAdd.h */,
+				952B0F7C1CFEE30600CED2DE /* NSObject+XDAdd.m */,
+				952B0F7D1CFEE30600CED2DE /* UIControl+XSZAdd.h */,
+				952B0F7E1CFEE30600CED2DE /* UIControl+XSZAdd.m */,
+				952B0F7F1CFEE30600CED2DE /* UIViewController+XSZAdd.h */,
+				952B0F801CFEE30600CED2DE /* UIViewController+XSZAdd.m */,
+				95EF3F0A1CFF13FF00BB216B /* UITapGestureRecognizer+XSZAdd.h */,
+				95EF3F0B1CFF13FF00BB216B /* UITapGestureRecognizer+XSZAdd.m */,
+			);
+			path = HcbCount;
+			sourceTree = "<group>";
+		};
+		952B0F841CFEE33B00CED2DE /* RuoShui */ = {
+			isa = PBXGroup;
+			children = (
+				952B0F851CFEE33B00CED2DE /* RuoshuiAnimationViewController.h */,
+				952B0F861CFEE33B00CED2DE /* RuoshuiAnimationViewController.m */,
+			);
+			path = RuoShui;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,12 +381,16 @@
 				08A8F3F91CD244A4008505DD /* CalendarViewCell.m in Sources */,
 				08A8F3FB1CD244A4008505DD /* HeadReusableView.m in Sources */,
 				08A8F3FF1CD244A4008505DD /* XSZCalendar.m in Sources */,
-				0815F4061CE31BF900DF0AD9 /* RuoshuiAnimationViewController.m in Sources */,
+				952B0F821CFEE30600CED2DE /* UIControl+XSZAdd.m in Sources */,
 				08A5CEE31CD0F39300A26EF2 /* ViewController.m in Sources */,
 				08A5CEE01CD0F39300A26EF2 /* AppDelegate.m in Sources */,
+				952B0F811CFEE30600CED2DE /* NSObject+XDAdd.m in Sources */,
 				08A5CF111CD0F3C900A26EF2 /* XSZDanMuView.m in Sources */,
 				08A8F3FA1CD244A4008505DD /* CalendarViewController.m in Sources */,
+				952B0F871CFEE33B00CED2DE /* RuoshuiAnimationViewController.m in Sources */,
+				952B0F831CFEE30600CED2DE /* UIViewController+XSZAdd.m in Sources */,
 				08A8F3FC1CD244A4008505DD /* NSDate+YYAdd.m in Sources */,
+				95EF3F0C1CFF13FF00BB216B /* UITapGestureRecognizer+XSZAdd.m in Sources */,
 				0841C08A1CEEC5F700EB416C /* WaveView.m in Sources */,
 				08A5CEDD1CD0F39300A26EF2 /* main.m in Sources */,
 			);

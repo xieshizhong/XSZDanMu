@@ -44,13 +44,16 @@
     [animationBtn addTarget:self action:@selector(animationBtnAction) forControlEvents:UIControlEventTouchDown];
     [self.view addSubview:animationBtn];
     
-    UIButton *waveBtn=[[UIButton alloc] initWithFrame:CGRectMake(startBtn.frame.origin.x, animationBtn.frame.origin.y+70, 100, 60)];
+    UIView *waveBtn=[[UIView alloc] initWithFrame:CGRectMake(startBtn.frame.origin.x, animationBtn.frame.origin.y+70, 100, 60)];
     waveBtn.backgroundColor=[UIColor redColor];
-    [waveBtn setTitle:@"波纹" forState:UIControlStateNormal];
-    [waveBtn addTarget:self action:@selector(waveBtnAction) forControlEvents:UIControlEventTouchDown];
+    UITapGestureRecognizer *tap=[[UITapGestureRecognizer alloc] init];
+    [tap addTarget:self action:@selector(waveBtnAction)];
+    [waveBtn addGestureRecognizer:tap];
     [self.view addSubview:waveBtn];
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
+
 
 - (void)startAction{
     if (!danMuview) {
@@ -77,6 +80,10 @@
 - (void)waveBtnAction{
     WaveView *wave=[[WaveView alloc] initWithFrame:CGRectMake(100, 200, 40, 40)];
     [self.view addSubview:wave];
+}
+
+- (void)testAction{
+    
 }
 
 - (void)didReceiveMemoryWarning {
