@@ -21,7 +21,7 @@
     [self configureCountInfo];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
-    ViewController *viewCon=[[ViewController alloc] init];//
+    ViewController *viewCon=[[ViewController alloc] init];////
     self.window.rootViewController=[[UINavigationController alloc] initWithRootViewController:viewCon];
     return YES;
 }
